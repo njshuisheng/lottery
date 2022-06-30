@@ -1,0 +1,1 @@
+export const num = (v: string | number) => isNaN(Number(v)) ? 0 : Number(v)
