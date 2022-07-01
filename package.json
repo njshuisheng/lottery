@@ -1,7 +1,7 @@
 {
   "name": "lottery-ball",
   "private": false,
-  "version": "1.0.8",
+  "version": "1.0.9",
   "exports": {
     ".": {
       "types": "./types/index.d.ts",
