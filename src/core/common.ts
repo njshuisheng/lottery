@@ -12,7 +12,7 @@ export const isPrime = (v: number): boolean => {
 
 export const getLotteries = (size: number = 10) => {
     return new Promise<Lottery[]>((resolve, reject) => {
-        fetch('../../mock/lotteries.json').then(async res => {
+        fetch('mock/lotteries.json').then(async res => {
             const data: { RECORDS: Lottery[] } = await res.json()
             resolve(data.RECORDS.slice(0, size))
         }).catch(err => reject(err))
