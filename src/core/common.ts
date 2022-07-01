@@ -1,5 +1,4 @@
-import { Lottery, Red } from "types"
-import { redPrimeComposite } from "./red"
+import { Lottery } from "types"
 
 export const num = (v: string | number) => isNaN(Number(v)) ? 0 : Number(v)
 
@@ -19,9 +18,3 @@ export const getLotteries = (size: number = 10) => {
         }).catch(err => reject(err))
     })
 }
-
-const data = await getLotteries(100)
-const reds: Red[][] = []
-data.forEach(n => reds.push(JSON.parse(n.reds)))
-const { prime, composite } = redPrimeComposite(reds, 1)
-console.log(prime, composite)
