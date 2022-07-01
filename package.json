@@ -1,7 +1,7 @@
 {
-  "name": "lottery",
-  "private": true,
-  "version": "0.0.0",
+  "name": "lottery-ball",
+  "private": false,
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -12,5 +12,7 @@
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
     "vitest": "^0.16.0"
-  }
+  },
+  "author": "shuisheng",
+  "license": "ISC"
 }
